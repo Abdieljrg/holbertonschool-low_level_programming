@@ -15,6 +15,6 @@ for (abc = "a"; abc <= "z"; abc++)
 _putchar(abc);
 }
 if (xx != 10)
-_putchar('/n');
+_putchar('\n');
 }
 }
