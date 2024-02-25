@@ -10,7 +10,7 @@ int xx;
 for (xx = 0; xx < 10; xx++)
 {
 char abc;
-for (abc = 'a'; abc <= 'z'; abc++)
+for (abc = "a"; abc <= "z"; abc++)
 {
 _putchar(abc);
 }
