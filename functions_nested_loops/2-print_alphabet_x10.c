@@ -14,12 +14,9 @@ print_alphabet_x10(void)
 		char abc;
 
 		for (abc = a; abc <= z; abc++)
-		{
+{
 			_putchar(abc);
-	}
-		{
 		if (xx != 10)
 		_putchar('/n');
-		}
 	}
 }
