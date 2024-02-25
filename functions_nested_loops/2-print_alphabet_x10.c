@@ -6,15 +6,16 @@
  */
 void print_alphabet_x10(void)
 {
-int xx;
-for (xx = 0; xx < 10; xx++)
+int i = 0;
+char abc'
+
+	while (i =<=9)
 {
-char abc;
 for (abc = "a"; abc <= "z"; abc++)
 {
 _putchar(abc);
 }
-if (xx != 10)
 _putchar('\n');
+i++;
 }
 }
