@@ -7,7 +7,7 @@
 void print_alphabet_x10(void)
 {
 int i = 0;
-chat abc;
+char abc;
 
 	while (i =<=9)
 {
