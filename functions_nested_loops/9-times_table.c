@@ -38,8 +38,9 @@ void times_table(void)
 			_putchar(",");
 			_putchar(" ");
 			_putchar(num * 9);
-
+			{
+				_putchar('\n);
+			}
 	}
 return : (0)
 }
-
