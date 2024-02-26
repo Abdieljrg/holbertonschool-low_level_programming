@@ -2,11 +2,9 @@
 /**
  * add - it sums two var
  *
- * @a - one of the int to sum
+ * @a: one of the int to sum
  *
- * @b - the second interger of the sum
- *
- * @c - the result of the sum of the two integers
+ * @b: the second interger of the sum
  *
  *Return: (c)
  */
