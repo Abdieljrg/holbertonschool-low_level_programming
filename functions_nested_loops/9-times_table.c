@@ -7,7 +7,7 @@
  */
 void times_table(void)
 {
-	int num, x, j, i;
+	int num, x;
 
 	int result;
 
@@ -15,7 +15,7 @@ void times_table(void)
 	{
 		for (x = 0; x <= 9; x++)
 		{
-			result = i * j;
+			result = num * x;
 
 			if (j > 0)
 			{
