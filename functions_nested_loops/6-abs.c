@@ -6,7 +6,7 @@
  *
  * Return: absolute value of z
  */
-int _abs(int z);
+int _abs(int z)
 {
 	if (z < 0)
 	{
