@@ -4,7 +4,7 @@
  *
  *  @n:char to be check
  *
- *  return: 1 for more than 0, 0 if it is 0 and -1 if its a negative
+ *  Return 1 for more than 0, 0 if it is 0 and -1 if its a negative
  */
 int print_sign(int n)
 {
