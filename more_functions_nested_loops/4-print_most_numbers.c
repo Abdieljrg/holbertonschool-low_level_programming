@@ -12,13 +12,11 @@ void print_most_numbers(void)
 	int num;
 
 for (num = '0'; num <= '9'; num++)
-	{
 	if (num != x && num != y)
 		{
 		_putchar(num);
 		}
 	{
 	_putchar('\n');
-	}
 	}
 }
