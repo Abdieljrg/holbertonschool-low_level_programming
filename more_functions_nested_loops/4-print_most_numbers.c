@@ -3,11 +3,12 @@
 /**
  *print_most_numbers - prints nmber except 2 and 4
  *
+ * Return: always return 0
  */
 void print_most_numbers(void)
 {
-	int x = 2;
-	int y = 4;
+	int x = '2';
+	int y = '4';
 	int num;
 
 	for (num = '0'; num <= '9'; num++)
