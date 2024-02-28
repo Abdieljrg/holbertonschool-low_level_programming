@@ -3,7 +3,7 @@
 /**
  *print_numbers - print a set of numbers
  *
- * Return: always void
+ * Return: always 0
  */
 void print_numbers(void)
 {
@@ -14,4 +14,5 @@ void print_numbers(void)
 		_putchar (num);
 	}
 	_putchar ('\n');
+	return (0);
 }
