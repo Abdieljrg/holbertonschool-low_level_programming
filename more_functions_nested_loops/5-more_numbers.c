@@ -16,9 +16,9 @@ int x;
 		{
 			if (num >= 10)
 			{
-				_putchar(0 + (x / 10));
-			}
-			_putchar(0 + (x % 10));
+				_putchar('0' + (x / 10));
+		}
+			_putchar('0' + (x % 10));
 	}
 	_putchar ('\n');
 	}
