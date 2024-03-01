@@ -14,7 +14,7 @@ int x;
 	{
 		for (num = 0; num <= 14; num++)
 		{
-			if (x >= 10)
+			if (num >= 10)
 			{
 				_putchar(0 + (x / 10));
 			}
