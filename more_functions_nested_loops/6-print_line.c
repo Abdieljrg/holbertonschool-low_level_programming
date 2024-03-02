@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 /**
  *print_line - prints a line
  *
@@ -22,5 +21,5 @@ void print_line(int n)
 		else
 		{
 	_putchar('\n');
-	}
-	}
+}
+}
