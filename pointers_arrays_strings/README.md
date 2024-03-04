@@ -1,0 +1,4 @@
+n
+inters 
+and 
+arrays
