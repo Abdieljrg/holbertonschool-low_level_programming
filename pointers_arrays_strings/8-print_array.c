@@ -15,5 +15,5 @@ int goku;
 	{
 		printf("%d%s", a[goku], (goku == n - 1) ? "" : ", ");
 	}
-	_putchar('\n');
+	putchar('\n');
 }
