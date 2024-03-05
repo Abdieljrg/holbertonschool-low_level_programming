@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <stdlib.h>
 /**
  *print_array - prints the array
  *@a: pointer in use
@@ -8,7 +9,7 @@
  */
 void print_array(int *a, int n)
 {
-	int goku;
+int goku;
 
 	for (goku = 0; goku < n; goku++)
 	{
