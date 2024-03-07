@@ -1,23 +1,22 @@
 #include "main.h"
 /**
- *print_rev - Function prints a strin in reverse
+ *reverse_array - main function
  *
- *@s: Pointer of char s
- *
+ *@a:Array pointer to reverse
+ *@n:n value
  *Return: void
  */
-void print_rev(char *s)
+void reverse_array(int *a, int n)
 {
-	int i = 0;
-	int j = 0;
-
-		while (s[i])
+	int x;
+	int y;
+	int c;
+	int b;
+		for (x = 0, y = (n - 1); x < (n / 2); x++, y--)
 		{
-			i++;
+			c = a[x];
+			b = a[y];
+			a[x] = b;
+			a[y] = c;
 		}
-			for (j = i - 1; j >= 0; j--)
-			{
-				_putchar(s[j]);
-			}
-			_putchar('\n');
 }
