@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- *_strstr locates substring
+ *_strstr - locates substring
  *@haystack: pointer one
  *@needle: pointer two
  *Return: may vary
@@ -12,7 +12,6 @@ char *_strstr(char *haystack, char *needle)
 	{
 		return (haystack);
 	}
-
 	while (*haystack != '\0')
 	{
 
@@ -26,7 +25,7 @@ char *_strstr(char *haystack, char *needle)
 				return (haystack);
 			}
 
-			haystack + 1;
+			haystack = haystack + 1;
 	}
 	return (NULL);
 }
