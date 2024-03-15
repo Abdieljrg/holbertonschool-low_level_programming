@@ -1,21 +1,17 @@
+#include <stdlib.h>
 #include <stdio.h>
-#include "main.h"
 /**
- *whatsmyname - prints the name of the program
- *
- *Return: cero
+ *  *main - main fuction argc and argv
+ *@argc: argument counter
+ *@argv: argument vector
+ *Return: 0
  */
-int whatsmyname(void)
+int main(int argc, char *argv[])
 {
-	char filename[] = __FILE__;
-	int i = 0;
-
-	while (filename[i] != '\0')
+	printf("%s\n", argv[0]);
+	if (argc > 1)
 	{
-		_putchar(filename[i]);
-		i++;
+		return (0);
 	}
-	_putchar('\n');
-
 	return (0);
 }
