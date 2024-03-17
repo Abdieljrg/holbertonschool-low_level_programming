@@ -33,7 +33,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		len2++;
 	}
-	lentotal + len1 + len2 + 1;
+	lentotal = len1 + len2 + 1;
 
 	concat = malloc(sizeof(char) * lentotal);
 
