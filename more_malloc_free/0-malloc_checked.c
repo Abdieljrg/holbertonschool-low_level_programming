@@ -13,6 +13,7 @@ void *malloc_checked(unsigned int b)
 	if (ptr == NULL)
 	{
 		printf("allocation un memory Failed.\n");
+		exit(98);
 	}
 	return (ptr);
 }
