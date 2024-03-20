@@ -29,10 +29,10 @@ void print_dog(struct dog *d)
 		return;
 	}
 
-	printf("name: ");
+	printf("Name: ");
 	print_field(d->name);
 
-	printf("age: ");
+	printf("Age: ");
 	if (d->age < 0)
 	{
 		printf("(nil)\n");
@@ -42,6 +42,6 @@ void print_dog(struct dog *d)
 		printf("%f\n", d->age);
 	}
 
-	printf("owner: ");
+	printf("Owner: ");
 	print_field(d->owner);
 }
