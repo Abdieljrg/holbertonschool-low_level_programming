@@ -1,77 +1,46 @@
 #include "dog.h"
-#include <stdlib.h>
-int _strlen(char *s);
-char *_strcpy(char *dest, char *src);
 /**
- *new_dog - desc
- *@name: name of dog
- *@age: age of dog
- *@owner: owner of the dog
- *Return: return
+ *print_field - organize funtction
+ *@field: pointer of var d
+ *
  */
-dog_t *new_dog(char *name, float age, char *owner)
+void print_field(char *field)
 {
-	dog_t *new_d;
-
-	new_d = malloc(sizeof(dog_t));
-	if (new_d == NULL)
-	return (NULL);
-	if (name == NULL)
-	new_d->name = NULL;
+	if (field == NULL)
+	{
+		printf("(nil)\n");
+	}
 	else
 	{
-		new_d->name = malloc(_strlen(name) + 1);
-		if (new_d->name == NULL)
-		{
-			free(new_d);
-			return (NULL);
-		}
-		new_d->name = _strcpy(new_d->name, name);
+		printf("%s\n", field);
 	}
-	if (owner == NULL)
-	new_d->owner = NULL;
+}
+
+/**
+ *print_dog - prints struct dog
+ *@d: ptr for struct dog
+ *
+ */
+void print_dog(struct dog *d)
+{
+	if (d == NULL)
+	{
+		return;
+	}
+
+	printf("Name: ");
+	print_field(d->name);
+
+	printf("Age: ");
+	if (d->age < 0)
+	{
+		printf("(nil)\n");
+	}
 	else
 	{
-		new_d->owner = malloc(_strlen(owner) + 1);
-		if (new_d->owner == NULL)
-		{
-			free(new_d->name);
-			free(new_d);
-			return (NULL);
-		}
-		new_d->owner = _strcpy(new_d->owner, owner);
+		printf("%f\n", d->age);
 	}
-	new_d->age = age;
-	return (new_d);
-}
-/**
- *_strlen - gets len of str
- *@s: str pointer
- *
- *Return: length of s
- */
-int _strlen(char *s)
-{
-	int i = 0;
 
-	for (i = 0; s[i]; i++)
-		;
-		return (i);
-}
-/**
- *_strcpy - cop str from src to dest
- *
- *@dest: ptr string destination
- *@src: ptr copy from
- *
- *Return: ptr to dest
- */
-char *_strcpy(char *dest, char *src)
-{
-char *temp = dest;
-
-	while (*src)
-	*temp++ = *src++;
-	temp = '\0';
-	return (dest);
+	printf("Owner: ");
+	print_field(d->owner);
 }
