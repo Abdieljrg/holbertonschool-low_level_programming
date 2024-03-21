@@ -1,46 +1,45 @@
 #include "dog.h"
 /**
- *print_field - organize funtction
- *@field: pointer of var d
- *
+ * new_dog - Function creates a new dog
+ * @name: Name of new dog
+ * @age: Age of new dog
+ * @owner: Owner of new dog
+ * Return: Returns the new dog created
  */
-void print_field(char *field)
+dog_t *new_dog(char *name, float age, char *owner)
 {
-	if (field == NULL)
-	{
-		printf("(nil)\n");
-	}
-	else
-	{
-		printf("%s\n", field);
-	}
+	dog_t *ogdog;
+	int i = 0;
+	int j = 0;
+	int k = 0;
+
+while (name[i])
+	i++;
+while (owner[j])
+	j++;
+ogdog = malloc(sizeof(dog_t));
+if (ogdog == NULL)
+{
+	free(ogdog);
+	return (NULL);
 }
 
-/**
- *print_dog - prints struct dog
- *@d: ptr for struct dog
- *
- */
-void print_dog(struct dog *d)
+ogdog->owner = malloc(j * sizeof(ogdog->owner));
+ogdog->age = age;
+ogdog->name = malloc(i * sizeof(ogdog->name));
+
+if (ogdog->name == NULL || ogdog->owner == NULL)
 {
-	if (d == NULL)
-	{
-		return;
-	}
+	free(ogdog->owner);
+	free(ogdog->name);
+	free(ogdog);
+	return (NULL);
+}
+for (k = 0; k <= i; k++)
+	ogdog->name[k] = name[k];
 
-	printf("Name: ");
-	print_field(d->name);
+for (k = 0; k <= j; k++)
+	ogdog->owner[k] = owner[k];
 
-	printf("Age: ");
-	if (d->age < 0)
-	{
-		printf("(nil)\n");
-	}
-	else
-	{
-		printf("%f\n", d->age);
-	}
-
-	printf("Owner: ");
-	print_field(d->owner);
+return (ogdog);
 }
