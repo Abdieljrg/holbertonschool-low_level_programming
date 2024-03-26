@@ -10,13 +10,8 @@
  */
 int op_add(int a, int b)
 {
-int x = (a + b)
-	;
-	if (a == NULL || b == NULL)
-		return;
-	{
+	int x = (a + b);
 		return (x);
-	}
 }
 
 /**
@@ -29,12 +24,8 @@ int x = (a + b)
  */
 int op_sub(int a, int b)
 {
-int x = (a - b);
-	if (a == NULL || b == NULL)
-		return;
-	{
+	int x = (a - b);
 		return (x);
-	}
 }
 
 /**
@@ -47,13 +38,8 @@ int x = (a - b);
  */
 int op_mul(int a, int b)
 {
-int x = (a * b);
-
-	if (a == NULL || b == NULL)
-		return;
-	{
+	int x = (a * b);
 		return (x);
-	}
 }
 
 /**
@@ -66,13 +52,8 @@ int x = (a * b);
  */
 int op_div(int a, int b)
 {
-int x = (a / b);
-
-	if (a == NULL || b == NULL)
-		return;
-	{
+	int x = (a / b);
 		return (x);
-	}
 }
 
 /**
@@ -84,11 +65,6 @@ int x = (a / b);
  */
 int op_mod(int a, int b)
 {
-int x = (a % b)
-
-	if (a == NULL || b == NULL)
-		return;
-	{
+	int x = (a % b);
 		return (x);
-	}
 }
