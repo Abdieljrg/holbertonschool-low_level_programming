@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- *dlist_len - length of double list
+ *dlistint_len - length of double list
  *@h: pointer in use for var
  *
  *Return: 0
