@@ -2,9 +2,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- *add_dnodeint - add new node
+ *@:add_dnodeint - add new node
  *@head: head of list
- *@h: var for input the list
+ *@n: var for input the list
  *@Return: cero if true
  */
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
