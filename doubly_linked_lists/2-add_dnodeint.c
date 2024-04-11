@@ -6,7 +6,7 @@
  *@head: head of list
  *@n: var for input the list
  *
- *@Return: cero if true
+ *Return: cero if true
  */
 
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
