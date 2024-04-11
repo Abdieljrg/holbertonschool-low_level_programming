@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- *@:add_dnodeint - add new node
+ *@add_dnodeint: add new node
  *@head: head of list
  *@n: var for input the list
  *@Return: cero if true
