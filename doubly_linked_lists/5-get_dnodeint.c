@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- *get_dnode_at_index - gets node in use
+ *get_dnodeint_at_index - gets node in use
  *@head: head of list
  *@index: index of program
  *Return: current
